@@ -7,7 +7,7 @@ if($_SESSION['is_logged'] !== true){
         $pass = trim($_POST['pass']);
         if(strlen($name) > 3 && strlen($pass) > 3){
             $rs = run_q('SELECT * FROM users WHERE login="' .$name.'" AND password="' . md5($pass).'"');
-            if(mysql_num_rows($rs)){
+            if(mysql_numrows($rs)==1){
                 $row = mysql_fetch_assoc($rs);
                 $_SESSION['is_logged'] = true;
                 $_SESSION['user_id'] = $row['user_id'];

@@ -17,6 +17,7 @@
 
 <body>
     <form action="login.php" method="post">
+<!--        <label> can be add for the inputs-->
         Name: <input type="text" name="login"/>
         Pass: <input type="text" name="pass"/>
         <input type="submit" value="Login"/>
