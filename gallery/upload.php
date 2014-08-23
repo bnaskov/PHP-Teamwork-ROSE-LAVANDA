@@ -1,6 +1,39 @@
 <?php
 include 'common.php';
 if($_SESSION['is_logged']===true){
+    // checks if the file is uploaded
+    if($_FILES['user_pic']['tmp_name']){
+        // checks if the file is bigger than 2MB (2MB = 20971152bytes)
+        if($_FILES['user_pic']['size']>2097152){
+            $err[] = 'The file is more than 2MB';
+        }
+        // checks for valid image type - more types can be added to the list
+        if($_FILES['user_pic']['type']!='image/gif' &&
+            $_FILES['user_pic']['type']!='image/jpeg' &&
+            $_FILES['user_pic']['type']!='image/pjerg'){
+            $err[] = 'The file is not a picture';
+        }
+        if(!$_POST['folder']>0){
+            $err[] = 'Please choose a category';
+        }
+        // if there aren't any mistakes we can continue with the execution of the code
+        if(count($err)==0){
+            // creates a user folder with his id
+            if(!is_dir('user_pics'.DIRECTORY_SEPARATOR.$_SESSION['user_id'])){
+                mkdir('user_pics'.DIRECTORY_SEPARATOR.$_SESSION['user_id']);
+            }
+            $name = time().'_'.$_FILES['user_pic']['name'];
+            // moves uploaded file
+            if(move_uploaded_file($_FILES['user_pic']['tmp_name'],
+                'user_pics'.DIRECTORY_SEPARATOR.$_SESSION['user_id'].$name)){
+                $success = true;
+            } else {
+                $err[] = 'Error while copying file. Please try again.';
+            }
+
+        }
+    }
+
     $folders=fetch_all(run_q('SELECT * FROM user_catalogs WHERE user_id='.$_SESSION['user_id']));
     include 'templates/header.php';
     include 'templates/upload.php';
