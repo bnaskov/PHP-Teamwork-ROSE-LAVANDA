@@ -1,3 +1,16 @@
+<?php
+if($success)
+{
+    echo 'The picture was uploaded successfully!';
+}
+if(count($err) > 0)
+{
+    foreach($err as $v)
+    {
+        echo '<div>'.$v.'</div>';
+    }
+}
+?>
 <form method="post" enctype="multipart/form-data">
     Група:<select name="folder">
         <?php
