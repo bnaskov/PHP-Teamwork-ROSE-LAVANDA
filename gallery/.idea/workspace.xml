@@ -23,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="common.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="2" selection-start="225" selection-end="225" vertical-scroll-proportion="-4.576923" vertical-offset="17" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="561">
+            <state line="7" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -44,19 +35,74 @@
       <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="92" selection-start="1732" selection-end="1732" vertical-scroll-proportion="-9.807693" vertical-offset="408" max-vertical-offset="1343">
+            <state line="61" column="121" selection-start="2429" selection-end="2429" vertical-scroll-proportion="-9.0" vertical-offset="803" max-vertical-offset="1343">
               <folding>
-                <marker date="1408815080964" expanded="true" signature="1555:1667" placeholder="INSERT INTO ..." />
-                <marker date="1408815080964" expanded="true" signature="1555:1657" placeholder="INSERT INTO ..." />
+                <marker date="1408826486063" expanded="true" signature="1555:1667" placeholder="INSERT INTO ..." />
+                <marker date="1408826486063" expanded="true" signature="1555:1657" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="1" selection-start="167" selection-end="167" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="561">
+            <state line="12" column="2" selection-start="170" selection-end="170" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_logged.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index_logged.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="20" selection-start="203" selection-end="435" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="391">
+              <folding>
+                <marker date="1408822165813" expanded="true" signature="222:251" placeholder="..." />
+                <marker date="1408822165813" expanded="true" signature="252:344" placeholder="..." />
+                <marker date="1408822165813" expanded="true" signature="252:297" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browse.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/browse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="9" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.6851852" vertical-offset="429" max-vertical-offset="1003">
+              <folding>
+                <marker date="1408825462805" expanded="true" signature="175:291" placeholder="SELECT * FRO..pictures..." />
+                <marker date="1408825462805" expanded="true" signature="175:282" placeholder="SELECT * FRO..pictures..." />
+                <marker date="1408825462805" expanded="true" signature="235:282" placeholder="SELECT catal..pictures..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browse.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/browse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="5" selection-start="232" selection-end="232" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_pic.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_pic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="42" selection-start="433" selection-end="433" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="833">
+              <folding>
+                <marker date="1408826283658" expanded="true" signature="220:304" placeholder="SELECT COUNT..pictures..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user_pics/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
               <folding />
             </state>
           </provider>
@@ -65,7 +111,7 @@
       <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="82" selection-start="322" selection-end="322" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="459">
+            <state line="11" column="46" selection-start="477" selection-end="477" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -74,8 +120,10 @@
       <file leaf-file-name="index_logged.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_logged.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="13" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="272">
-              <folding />
+            <state line="9" column="35" selection-start="391" selection-end="391" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="374">
+              <folding>
+                <marker date="1408820398065" expanded="true" signature="93:188" placeholder="SELECT * FRO..user_catalogs..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,10 +140,15 @@
       <list>
         <option value="$PROJECT_DIR$/ggg.html" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/index_logged.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/common.php" />
         <option value="$PROJECT_DIR$/templates/upload.php" />
+        <option value="$PROJECT_DIR$/index_logged.php" />
+        <option value="$PROJECT_DIR$/templates/index_logged.php" />
+        <option value="$PROJECT_DIR$/templates/browse.php" />
+        <option value="$PROJECT_DIR$/browse.php" />
+        <option value="$PROJECT_DIR$/get_pic.php" />
+        <option value="$PROJECT_DIR$/user_pics/.htaccess" />
         <option value="$PROJECT_DIR$/upload.php" />
       </list>
     </option>
@@ -166,6 +219,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="user_pics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gallery-gatakka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -222,7 +289,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -288,7 +355,9 @@
     <entry file="file://$PROJECT_DIR$/index_logged.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="272">
-          <folding />
+          <folding>
+            <marker date="1408820398065" expanded="true" signature="93:188" placeholder="SELECT * FRO..user_catalogs..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -316,7 +385,9 @@
     <entry file="file://$PROJECT_DIR$/index_logged.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
-          <folding />
+          <folding>
+            <marker date="1408820398065" expanded="true" signature="93:188" placeholder="SELECT * FRO..user_catalogs..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -344,34 +415,15 @@
     <entry file="file://$PROJECT_DIR$/index_logged.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
-          <folding />
+          <folding>
+            <marker date="1408820398065" expanded="true" signature="93:188" placeholder="SELECT * FRO..user_catalogs..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="27" selection-start="1772" selection-end="1793" vertical-scroll-proportion="-0.17636363" vertical-offset="845" max-vertical-offset="15283">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index_logged.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="82" selection-start="322" selection-end="322" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
@@ -383,20 +435,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index_logged.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="203" selection-end="435" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="391">
+          <folding>
+            <marker date="1408822165813" expanded="true" signature="222:251" placeholder="..." />
+            <marker date="1408822165813" expanded="true" signature="252:344" placeholder="..." />
+            <marker date="1408822165813" expanded="true" signature="252:297" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_pics/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_logged.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="391" selection-end="391" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="374">
+          <folding>
+            <marker date="1408820398065" expanded="true" signature="93:188" placeholder="SELECT * FRO..user_catalogs..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/browse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="232" selection-end="232" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="92" selection-start="1732" selection-end="1732" vertical-scroll-proportion="-9.807693" vertical-offset="408" max-vertical-offset="1343">
+        <state line="61" column="121" selection-start="2429" selection-end="2429" vertical-scroll-proportion="-9.0" vertical-offset="803" max-vertical-offset="1343">
           <folding>
-            <marker date="1408815080964" expanded="true" signature="1555:1667" placeholder="INSERT INTO ..." />
-            <marker date="1408815080964" expanded="true" signature="1555:1657" placeholder="INSERT INTO ..." />
+            <marker date="1408826486063" expanded="true" signature="1555:1667" placeholder="INSERT INTO ..." />
+            <marker date="1408826486063" expanded="true" signature="1555:1657" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_pic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="42" selection-start="433" selection-end="433" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="833">
+          <folding>
+            <marker date="1408826283658" expanded="true" signature="220:304" placeholder="SELECT COUNT..pictures..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="167" selection-end="167" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="561">
+        <state line="12" column="2" selection-start="170" selection-end="170" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="527">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="477" selection-end="477" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="9" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.6851852" vertical-offset="429" max-vertical-offset="1003">
+          <folding>
+            <marker date="1408825462805" expanded="true" signature="175:291" placeholder="SELECT * FRO..pictures..." />
+            <marker date="1408825462805" expanded="true" signature="175:282" placeholder="SELECT * FRO..pictures..." />
+            <marker date="1408825462805" expanded="true" signature="235:282" placeholder="SELECT catal..pictures..." />
+          </folding>
         </state>
       </provider>
     </entry>

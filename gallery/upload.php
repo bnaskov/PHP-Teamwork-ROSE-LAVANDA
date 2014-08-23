@@ -59,7 +59,7 @@ else
     exit;
 }
 
-function create_thumb($sourse, $thumb_width = 100)
+function create_thumb($sourse, $thumb_width = 100) //We will add some functionality to display other pictures types here!
 {
     $fl = dirname($sourse);
     $new_name = 'thumb_'.basename($sourse);
