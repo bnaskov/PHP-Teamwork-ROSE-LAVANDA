@@ -1,10 +1,10 @@
 <?php
-    session_start();
-    if($_SESSION['is_logged'] === true){
-        header('Location: index_logged.php');
-        exit;
-    }
-?>
+//    session_start();
+//    if($_SESSION['is_logged'] === true){
+//        header('Location: index_logged.php');
+//        exit;
+//    }
+//?>
 
 <!DOCTYPE html>
 
@@ -25,7 +25,7 @@
             <img src="images/Play.png" alt="play" id="play"/>
             <img src="images/Stop.png" alt="stop" id="stop"/>
         </div>
-        <p>Share the moment</p>
+        <p id="share-moments">Share the moment</p>
     </header>
     <main>
     <form action="login.php" method="post" class="form">
