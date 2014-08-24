@@ -1,6 +1,6 @@
 <?php
 include 'common.php';
-if($_SESSION['is_logged']===true)
+if($_SESSION['is_logged'] === true)
 {
     $query = 'SELECT uc.name, p.pic_id, p.comment FROM user_catalogues as uc, pictures as p WHERE uc.user_id='.$_SESSION['user_id'].' AND p.catalogue_id=uc.catalogue_id ORDER BY uc.catalogue_id';
     $pics = fetch_all(run_q($query));

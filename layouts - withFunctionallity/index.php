@@ -1,10 +1,12 @@
 <?php
-//    session_start();
-//    if($_SESSION['is_logged'] === true){
-//        header('Location: index_logged.php');
-//        exit;
-//    }
-//?>
+    session_start();
+    if(isset($_SESSION['is_logged'])){
+        if($_SESSION['is_logged'] === true){
+            header('Location: index_logged.php');
+            exit;
+        }
+    }
+?>
 
 <!DOCTYPE html>
 
