@@ -36,6 +36,11 @@
         <input type="submit" value="Login"/>
         <input type="hidden" name="log_post" value="1"/>
     </form>
+    <form action="registration.php" method="post" class="form">
+        Username:<input type="text" name="username">
+        Password:<input type="password" name="pass">
+        E-Mail:<input type="email" name="user-mail">
+    </form>
     </main>
     <footer>
         <p>Your moments - share them, keep them, remember them every day </p>

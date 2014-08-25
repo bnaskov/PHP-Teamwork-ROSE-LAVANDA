@@ -13,6 +13,6 @@ if($_SESSION['is_logged'] === true)
 }
 else
 {
-    header('Location: index.php');
+    header('Location: template/index_notlogged.php');
     exit;
 }
