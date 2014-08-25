@@ -25,7 +25,6 @@
                 {
                     $fileToRead = 'user_pics'.DIRECTORY_SEPARATOR.$_SESSION['user_id'].DIRECTORY_SEPARATOR.'thumb_'.$row['pic_name'];
                     readfile($fileToRead);
-                    echo 'ok';
                 }
             }
         }

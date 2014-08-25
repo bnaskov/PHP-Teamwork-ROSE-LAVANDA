@@ -12,7 +12,7 @@ if($_SESSION['is_logged'] !== true){
                 $_SESSION['is_logged'] = true;
                 $_SESSION['user_id'] = $row['user_id'];
                 $_SESSION['login'] = $row['login'];
-                header('Location: index_logged.php');
+                header('Location: index_logged.php?showPrivate=1');
                 exit;
             }
         }

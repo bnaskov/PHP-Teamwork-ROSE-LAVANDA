@@ -14,8 +14,13 @@
     <div> Hello, <?php echo $_SESSION['login']; ?> </div>
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="folders.php">My folders</a></li>
+            <li><a href="index_logged.php?showPublic=1">View Public</a></li>
+            <li><a href="#">My albums</a>
+                <ul>
+                    <li><a href="index_logged.php?showPrivate=1">View all</a></li>
+                    <li><a href="folders.php">Create new</a></li>
+                </ul>
+            </li>
             <li><a href="upload.php">Upload new picture</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>

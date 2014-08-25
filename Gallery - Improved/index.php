@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION['is_logged'])){
         if($_SESSION['is_logged'] === true){
-            header('Location: index_logged.php');
+            header('Location: index_logged.php?showPrivate=1');
             exit;
         }
     }
@@ -47,7 +47,6 @@
     </footer>
 
     <!--Scripts-->
-    <script src="scripts/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
         window.onload = function(){
             var stop = document.getElementById('stop');

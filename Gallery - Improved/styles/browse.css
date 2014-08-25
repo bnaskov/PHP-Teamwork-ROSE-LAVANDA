@@ -7,7 +7,7 @@
   border: 2px solid rgba(50, 50, 50, 0.7);
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px; }
-  .wrapper .button {
+  .wrapper .button, .wrapper .button-like {
     width: 15%;
     height: 35px;
     margin-right: 3%;
@@ -20,7 +20,7 @@
     border-radius: 5px;
     color: #353535;
     transition: ease 0.2s all; }
-  .wrapper .button:active {
+  .wrapper .button:active, .wrapper .button-like:active {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-shadow: none;
@@ -29,9 +29,11 @@
     outline: none;
     background: #f8390f;
     border: none; }
-  .wrapper .button:focus {
+  .wrapper .button:focus, .wrapper .button-like:active {
     outline: none;
     border: none; }
+  .wrapper .button-like {
+    margin-bottom: 2%; }
   .wrapper div {
     max-width: 60%;
     max-height: 60%;

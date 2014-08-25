@@ -3,10 +3,17 @@
     if($_SESSION['is_logged']===true)
     {
         $pic_id = (int)$_GET['pic_id'];
+        $select = '';
+        if(isset($_POST['getPublic'])){
+            $select = 'SELECT pic_id FROM pictures WHERE
+            catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') ORDER BY pic_id AND is_public=1';
+        } else {
+            $select = 'SELECT pic_id FROM pictures WHERE
+            catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') ORDER BY pic_id';
+        }
         if($pic_id > 0)
         {
-            $rs = run_q('SELECT pic_id FROM pictures WHERE
-            catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') ORDER BY pic_id');
+            $rs = run_q($select);
             while($row = mysql_fetch_assoc($rs))
             {
                 $ar_pics[] = $row['pic_id'];
