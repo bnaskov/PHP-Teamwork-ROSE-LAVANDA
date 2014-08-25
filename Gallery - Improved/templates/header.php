@@ -6,6 +6,7 @@
     <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
     <link rel="stylesheet" href="styles/header.css"/>
     <link rel="stylesheet" href="styles/<?php echo $cssFile; ?>"/>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <title><?php echo $pageTitle?></title>
 </head>
 <body>
