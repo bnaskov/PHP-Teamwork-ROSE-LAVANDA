@@ -4,9 +4,9 @@
     {
         $pic_id = (int)$_GET['pic_id'];
         $select = '';
-        if(isset($_POST['getPublic'])){
+        if(isset($_GET['getPublic'])){
             $select = 'SELECT pic_id FROM pictures WHERE
-            catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') ORDER BY pic_id AND is_public=1';
+            catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') AND is_public=1 ORDER BY pic_id';
         } else {
             $select = 'SELECT pic_id FROM pictures WHERE
             catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') ORDER BY pic_id';

@@ -4,7 +4,6 @@ include 'common.php';
          include 'common.php';
          include 'templates/header.php';
              mysql_close($con);
-         }
      }
 header('Location: index.php');
 exit;
