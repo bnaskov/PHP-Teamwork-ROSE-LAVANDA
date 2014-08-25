@@ -10,9 +10,7 @@ if($_SESSION['is_logged']===true){
                 $err[] = 'The file is more than 2MB';
             }
             // checks for valid image type - more types can be added to the list
-            if($_FILES['user_pic']['type']!='image/gif' &&
-                $_FILES['user_pic']['type']!='image/jpeg' &&
-                $_FILES['user_pic']['type']!='image/pjerg'){
+            if(getimagesize($_FILES['user_pic']['type'])==0){
                 $err[] = 'The file is not a picture';
             }
             if(!$_POST['folder']>0){
