@@ -3,8 +3,8 @@ include 'common.php';
 
 if($_SESSION['is_logged'] !== true){
     if($_POST['log_post'] == 1){
-        $name = addslashes(trim($_POST['login']));
-        $pass = trim($_POST['pass']);
+        $name = mysql_real_escape_string((addslashes(trim($_POST['login']))));
+        $pass = mysql_real_escape_string(trim($_POST['pass']));
         if(strlen($name) > 3 && strlen($pass) > 3){
             $rs = run_q('SELECT * FROM users WHERE login="' .$name.'" AND pass="' . md5($pass).'"');
             if(mysql_numrows($rs)==1){

@@ -57,7 +57,7 @@
             </form>
             <form action="register.php" method="post" class="form">
                 <div>
-                    <label for="">Username:</label><input type="text" id="username" name="username">
+                    <label for="username">Username:</label><input type="text" id="username" name="username">
                     <label for="passReg">Password:</label><input type="password" id="passReg" name="pass">
                 </div>
                 <div>
