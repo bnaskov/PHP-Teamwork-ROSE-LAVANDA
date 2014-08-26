@@ -11,7 +11,7 @@
                 $cat = $v['name']; ?>
                 <div class="picture">
                     <div>
-                        <a id="<?php echo $id?>" href="browse.php?pic_id=<?php echo $v['pic_id']; ?>"><img src="get_pic.php?pic_id=<?php echo $v['pic_id']; ?>&full_size=0"></a>
+                        <a id="<?php echo $id; ?>" href="browse.php?pic_id=<?php echo $v['pic_id']; ?>"><img src="get_pic.php?pic_id=<?php echo $v['pic_id']; ?>&full_size=0"></a>
                     </div>
                     <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo $v['comment'] ?></div>
                 </div>
@@ -27,7 +27,7 @@
                 foreach($currentCataloguePics as $pic){ ?>
                 <div class="picture">
                     <div>
-                        <a id="<?php echo $pic['pic_id']?>" href="browse.php?pic_id=<?php echo $pic['pic_id']; ?>&browsePublic"><img src="get_pic.php?pic_id=<?php echo $pic['pic_id']; ?>&full_size=0&getPublic"></a>
+                        <a id="<?php echo $id; ?>" href="browse.php?pic_id=<?php echo $pic['pic_id']; ?>&browsePublic"><img src="get_pic.php?pic_id=<?php echo $pic['pic_id']; ?>&full_size=0&getPublic"></a>
                     </div>
                     <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo $pic['comment'] ?></div>
                 </div>
