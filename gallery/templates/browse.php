@@ -1,11 +1,11 @@
     <div class="wrapper">
         <?php
-        if(isset($_GET['getPublic'])){
+        if(isset($_GET['browsePublic'])){
             if($prev_pic > 0): ?>
-                <button class="button" onclick='location.href="browse.php?pic_id=<?php echo $prev_pic; ?>&getPublic=1"'>Previous</button>
+                <button class="button" onclick='location.href="browse.php?pic_id=<?php echo $prev_pic; ?>&browsePublic=1"'>Previous</button>
             <?php endif;
             if($next_pic > 0): ?>
-                <button class="button" onclick='location.href="browse.php?pic_id=<?php echo $next_pic; ?>&getPublic=1"'>Next</button>
+                <button class="button" onclick='location.href="browse.php?pic_id=<?php echo $next_pic; ?>&browsePublic=1"'>Next</button>
 
             <?php endif; ?>
             <div>
@@ -17,7 +17,7 @@
             <!--It will be added in the main directory -->
 
             <button type="submit" class="button-like" onclick="window.location.href='incrementLikes.php'">Like</button>
-            <img src="get_pic.php?pic_id=<?php echo $pic_id; ?>&full_size=1">
+            <img src="get_pic.php?pic_id=<?php echo $pic_id; ?>&full_size=1&getPublic">
             </div> <?php
         } else {
             if($prev_pic > 0): ?>
