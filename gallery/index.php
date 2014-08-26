@@ -66,7 +66,7 @@
                 <?php if(isset($_SESSION['msg'])): ?>
                     <div><p><?php echo $_SESSION['msg']; session_destroy(); ?></p></div>
                 <?php endif; ?>
-                <input type="submit" value="Register"/>
+                <input type="submit" value="Register" name="regform"/>
             </form>
         </section>
 
