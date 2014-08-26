@@ -15,7 +15,6 @@
             <input type="hidden" name="fs" value="1"/>
         </div>
     </form>
-
     <div class="catalogues-header">
         <p>
             My catalogues
@@ -25,8 +24,12 @@
     <?php
     foreach($folders as $v):
          $cataloguePics = fetch_all(run_q('SELECT p.pic_id FROM pictures as p WHERE p.catalogue_id='.$v['catalogue_id']));
-         $firstPic = $cataloguePics[0]['pic_id'];?>
-         <div><a href="browse.php?pic_id=<?php echo $firstPic; ?>&browsePrivate"><?php echo $v['name']; ?></a></div>
-    <?php endforeach;
+         if(isset($cataloguePics[0]['pic_id'])){
+            $firstPic = $cataloguePics[0]['pic_id'];?>
+            <div><a href="browse.php?pic_id=<?php echo $firstPic; ?>&browsePrivate"><?php echo $v['name']; ?></a></div>
+         <?php } else{ ?>
+            <div><a href="#""><?php echo $v['name']; ?></a></div>
+         <?php }
+    endforeach;
     ?>
     </div>

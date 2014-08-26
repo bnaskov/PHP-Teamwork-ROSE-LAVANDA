@@ -32,12 +32,10 @@ if($_SESSION['is_logged']===true){
 
                 {
                     //Original code $_POST['is_public'] == 1
-                    if(isset($_POST['is_public']))
-                    {
+                    if(isset($_POST['is_public'])){
                         $public = 1;
                     }
-                    else
-                    {
+                    else{
                         $public = 0;
                     }
                     run_q('INSERT INTO pictures (pic_name, catalogue_id, comment, date_added, is_public) VALUES
@@ -59,15 +57,12 @@ if($_SESSION['is_logged']===true){
     include 'templates/header.php';
     include 'templates/upload.php';
     include 'templates/footer.php';
-}
-else
-{
+} else {
     header('Location: index.php');
     exit;
 }
 
-function create_thumb($sourse, $thumb_width = 100) //We will add some functionality to display other pictures types here!
-{
+function create_thumb($sourse, $thumb_width = 100){
     $fl = dirname($sourse);
     $new_name = 'thumb_'.basename($sourse);
     $img = imagecreatefromjpeg($sourse);

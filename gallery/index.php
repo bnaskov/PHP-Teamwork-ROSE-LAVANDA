@@ -36,7 +36,7 @@
             $con=mysqli_connect("localhost","root","","gallery");
             $result = mysqli_query($con,"SELECT pic_id FROM pictures WHERE is_public=1 ORDER BY likes DESC");
             $publicPictures = array();
-            while($row = mysqli_fetch_array($result)) {
+            while($row = mysqli_fetch_array($result)){
               $publicPictures[] = $row['pic_id'];
             }
 

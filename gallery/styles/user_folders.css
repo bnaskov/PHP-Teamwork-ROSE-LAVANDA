@@ -79,7 +79,9 @@ body {
   border-top-left-radius: 15px;
   color: #0a0a0a;
   text-align: center;
-  font-style: italic; }
+  font-style: italic;
+  word-wrap: break-word;
+  text-overflow: ellipsis; }
   .catalogues div {
     font-size: 180%;
     color: #0a0a0a; }

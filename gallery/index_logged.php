@@ -1,7 +1,6 @@
 <?php
 include 'common.php';
-if($_SESSION['is_logged'] === true)
-{
+if($_SESSION['is_logged'] === true){
     $query = '';
     $pics = array();
     if(isset($_GET['showPrivate'])){
@@ -26,8 +25,7 @@ if($_SESSION['is_logged'] === true)
     include 'templates/index_logged.php';
     include 'templates/footer.php';
 }
-else
-{
+else{
     header('Location: index.php');
     exit;
 }

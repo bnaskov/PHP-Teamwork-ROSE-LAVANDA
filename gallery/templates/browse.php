@@ -11,7 +11,7 @@
             <div>
                 <?php $_SESSION['pic_id'] = $pic_id; ?>
                 <form method="post" action="increment_likes.php"><input type="submit"  class="button-like" name="likeButton" value="Like"></form>
-                <div><?php echo "$likesNum"; ?></div>
+                <div class="likes"><?php echo "$likesNum"; ?></div>
                 <img src="get_pic.php?pic_id=<?php echo $pic_id; ?>&full_size=1&getPublic">
             </div> <?php
         } else {

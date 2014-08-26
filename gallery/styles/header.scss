@@ -20,6 +20,8 @@ header{
     background: rgb(210, 210, 210);
     font-size: 140%;
     color: rgb(53, 53, 53);
+    word-wrap: break-word;
+    text-overflow: ellipsis;
   }
   ul{
     li{
@@ -61,12 +63,9 @@ header{
           border-radius: 5px;
           margin-bottom: 5%;
         }
-<<<<<<< .working
-=======
         a:hover{
           height: 30px;
         }
->>>>>>> .merge-right.r32
         ul{
           display: none;
           width: 14%;

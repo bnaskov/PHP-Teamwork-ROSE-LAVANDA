@@ -26,6 +26,9 @@
       width: 100px;
       height: 100px; }
     .wrapper .picture .comment {
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      overflow: hidden;
       display: none;
       width: 100px;
       height: 100px;

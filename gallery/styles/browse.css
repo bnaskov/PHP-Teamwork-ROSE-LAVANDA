@@ -32,8 +32,27 @@
   .wrapper .button:focus, .wrapper .button-like:active {
     outline: none;
     border: none; }
+  .wrapper form {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%; }
+    .wrapper form .button-like {
+      width: 100%; }
   .wrapper .button-like {
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    display: inline-block; }
+  .wrapper .likes {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #e2e2e2;
+    border: 2px solid rgba(50, 50, 50, 0.7);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 1.5%;
+    box-shadow: 0px 0px 1px 3px #e2e2e2;
+    -moz-box-shadow: 2px 2px 1px 0 #e2e2e2;
+    -webkit-shadow: 2px 2px 1px 0 #e2e2e2; }
   .wrapper div {
     max-width: 60%;
     max-height: 60%;

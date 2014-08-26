@@ -57,6 +57,8 @@
     select{
       font-size: 100%;
       color: rgb(50, 50, 50);
+      word-wrap: break-word;
+      text-overflow: ellipsis;
     }
     textarea{
       padding: 2%;

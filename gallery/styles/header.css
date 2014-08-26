@@ -18,7 +18,9 @@ header {
     padding: 1%;
     background: #d2d2d2;
     font-size: 140%;
-    color: #353535; }
+    color: #353535;
+    word-wrap: break-word;
+    text-overflow: ellipsis; }
   header ul li {
     display: inline-block;
     width: 15%;
@@ -52,10 +54,33 @@ header {
       header ul li ul li {
         display: block;
         width: 100%;
-<<<<<<< .working
         background: #d2d2d2;
         border-radius: 5px;
         margin-bottom: 5%; }
+      header ul li ul a:hover {
+        height: 30px; }
+      header ul li ul ul {
+        display: none;
+        width: 14%;
+        background: rgba(245, 245, 245, 0.4);
+        padding: 0.5%;
+        position: absolute;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; }
+        header ul li ul ul li {
+          display: block;
+          width: 100%;
+          background: #d2d2d2;
+          border-radius: 5px;
+          margin-bottom: 5%; }
+    header ul li li:nth-of-type(2) {
+      padding-bottom: 0; }
+    header ul li li:nth-of-type(2) a {
+      height: 100%;
+      border-bottom: none; }
+    header ul li li:nth-of-type(2):hover ul {
+      overflow: visible;
+      display: block; }
   header ul li:nth-of-type(2) {
     padding-bottom: 0; }
   header ul li:nth-of-type(2) a {
@@ -64,34 +89,3 @@ header {
   header ul li:nth-of-type(2):hover ul {
     overflow: visible;
     display: block; }
-=======
-        height: 40px;
-        border-bottom: 2px solid rgba(53, 53, 53, 0.8);
-        color: inherit;
-        text-decoration: none;
-        transition: ease 0.2s all; }
-      body header ul li a:hover {
-        height: 30px; }
-      body header ul li ul {
-        display: none;
-        width: 14%;
-        background: rgba(245, 245, 245, 0.4);
-        padding: 0.5%;
-        position: absolute;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px; }
-        body header ul li ul li {
-          display: block;
-          width: 100%;
-          background: #d2d2d2;
-          border-radius: 5px;
-          margin-bottom: 5%; }
-    body header ul li:nth-of-type(2) {
-      padding-bottom: 0; }
-    body header ul li:nth-of-type(2) a {
-      height: 100%;
-      border-bottom: none; }
-    body header ul li:nth-of-type(2):hover ul {
-      overflow: visible;
-      display: block; }
->>>>>>> .merge-right.r32

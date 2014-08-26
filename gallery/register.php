@@ -15,8 +15,7 @@ try{
         }
 
         $sql=mysql_query("SELECT * FROM users WHERE login='$username'");
-        if(mysql_num_rows($sql)>0)
-        {
+        if(mysql_num_rows($sql)>0){
             $msg = "Name already exists";
             throw new Exception();
 
