@@ -18,10 +18,10 @@
 		</div>
 		<div class="center">
 			<ul>
-		        <li><a href="http://picasa.google.com/"><img src="images/picasa-logo.png" target="_blank" alt=""></a></li>
-		        <li><a href="https://www.flickr.com/"><img src="images/Flickr_logo.png" target="_blank" alt=""></a></li>
-		        <li><a href="http://instagram.com/"><img src="images/Instagram-logo.png" target="_blank" alt=""></a></li>
-		        <li><a href="http://www.500px.com/"><img src="images/500px.png" target="_blank" alt=""></a></li>
+		        <li><a href="http://picasa.google.com/" target="_blank" ><img src="images/picasa-logo.png" alt=""></a></li>
+		        <li><a href="https://www.flickr.com/" target="_blank"><img src="images/Flickr_logo.png" alt=""></a></li>
+		        <li><a href="http://instagram.com/" target="_blank"><img src="images/Instagram-logo.png" alt=""></a></li>
+		        <li><a href="http://www.500px.com/" target="_blank"><img src="images/500px.png" alt=""></a></li>
 		    </ul>
 
 	    </div>
