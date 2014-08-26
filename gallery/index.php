@@ -63,6 +63,9 @@
                 <div>
                     <label for="user-mail">E-Mail:</label><input type="email" id="user-mail" name="user-mail">
                 </div>
+                <?php if(isset($_SESSION['msg'])): ?>
+                    <div><p><?php echo $_SESSION['msg']; session_destroy(); ?></p></div>
+                <?php endif; ?>
                 <input type="submit" value="Register"/>
             </form>
         </section>

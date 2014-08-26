@@ -9,9 +9,9 @@ include 'common.php';
         $result = run_q($query);
         if($result){
             $msg = "User Created Successfully.";
+            $_SESSION['msg'] = $msg;
         }
     }
 header('Location: index.php');
-exit;
 //TODO register form still needs to be fixed
 //It does not send data to the database
