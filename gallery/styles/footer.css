@@ -1,5 +1,4 @@
 footer {
-	width: 85%;
 	margin: 0 auto;
 	background-color: rgba(113, 219, 153, 0.4);
 	border: 2px solid rgba(50, 50, 50, 0.7);
@@ -12,7 +11,7 @@ footer {
 
 footer div {
 	display: inline-block;
-	margin-right: 60px;
+	margin-right: 30px;
 	vertical-align: middle;
 }
 
