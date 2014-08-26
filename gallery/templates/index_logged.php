@@ -20,7 +20,10 @@
 
         if(isset($_GET['showPublic'])){
             $id = 1;
-            foreach($pics as $k => $v){ ?>
+            foreach($pics as $k => $v){
+                if(empty($v)){
+                    continue;
+                }?>
                 <div class="catalogue"><h2><?php echo $k;
                      $currentCataloguePics = $v; ?></h2></div>
                 <?php
