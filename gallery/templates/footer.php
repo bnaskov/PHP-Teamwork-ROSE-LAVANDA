@@ -9,7 +9,7 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 <footer>
 
-	<div>
+	<div class="logo">
 		<a href="http://softuni.bg"><img src="images/softLogo.png" alt=""></a>
 	</div>
 	<div>
@@ -29,7 +29,9 @@
 
    	</div>
     <div>
-        <div class="fb-like" data-href="https://www.facebook.com/pages/%D0%93%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F-Rose-Lavanda/1460284694256938?sk=timeline" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        <a href="https://www.facebook.com/pages/%D0%93%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F-Rose-Lavanda/1460284694256938?sk=timeline">
+            <img src="images/logo.png" />
+        </a>
     </div>
 </footer>
 </html>

@@ -12,7 +12,7 @@ footer {
 
 footer div {
 	display: inline-block;
-	margin-right: 120px;
+	margin-right: 60px;
 	vertical-align: middle;
 }
 
@@ -36,8 +36,9 @@ ul li {
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 16pt;
+    padding: 10px;
 }
 
-.fb-like {
-    display: inline-block;
+.logo {
+    margin-left: 44px;
 }
