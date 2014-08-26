@@ -31,31 +31,25 @@
     </header>
     <main>
         <section class="popular_pics">
+            <div class="header"><p>Our most liked pictures</p></div>
             <?php
-            // TODO getMostPopularPics.php
-            // It will return array of the most popular public pictures that
-            // contains pic_id, comment
-            // NOTICE: The name of the array should be topPictures
-//            include 'getMostPopularPics.php';
-//            $id = 1;
-            //$res = mysql_query ("SELECT pic_id FROM `pictures` WHERE is_public=1");
-            //$row = mysql_fetch_row($res);
-            //if ($row)
-            //    $topPictures[] = $row['pic_id'];
             $con=mysqli_connect("localhost","root","","gallery");
-            $result = mysqli_query($con,"SELECT pic_name FROM `pictures` WHERE is_public=1");
-
+            $result = mysqli_query($con,"SELECT pic_id FROM pictures WHERE is_public=1 ORDER BY likes DESC");
+            $publicPictures = array();
             while($row = mysqli_fetch_array($result)) {
-              $topPictures[] = $row['pic_name'];
+              $publicPictures[] = $row['pic_id'];
             }
-            /* foreach($topPictures as $pic): ?>
-              <div class="picture">
-                    <div>
-                        <a id="<?php echo $id?>" href="browse.php?pic_id=<?php echo $pic['pic_id']; ?>"><img src="get_pic.php?pic_id=<?php echo $v['pic_id']; ?>&full_size=0"></a>
-                    </div>
-                    <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo $pic['comment'] ?></div>
+
+            if(count($publicPictures) < 8){
+                $topPictures = $publicPictures;
+            } else{
+                $topPictures = array_slice($publicPictures, 0, 8);
+            }
+            for($pic = 0; $pic < count($topPictures); $pic++): ?>
+                <div class="picture">
+                    <img src="get_pic.php?pic_id=<?php echo $topPictures[$pic]; ?>&full_size=0">
                 </div>
-            <?php endforeach; */
+           <?php endfor;
            ?>
         </section>
         <section class="authentication">

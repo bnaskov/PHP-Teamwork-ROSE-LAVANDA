@@ -46,7 +46,25 @@ body {
     padding: 2% 4%; }
     body main .popular_pics {
       width: 40%;
-      float: left; }
+      float: left;
+      border-radius: 5px;
+      background: rgba(47, 89, 123, 0.6);
+      text-align: center;
+      padding: 1% 2% 2% 2%; }
+      body main .popular_pics .header {
+        margin-bottom: 5%; }
+        body main .popular_pics .header p {
+          font-size: 190%;
+          font-style: italic;
+          color: #c8c8c8; }
+      body main .popular_pics .picture {
+        display: inline-block;
+        width: 100px;
+        height: 100px; }
+        body main .popular_pics .picture img {
+          width: 100%;
+          height: 100%;
+          margin: 2%; }
     body main .authentication {
       float: right;
       width: 40%; }

@@ -3,21 +3,13 @@
     if($_SESSION['is_logged']===true)
     {
         $pic_id = (int)$_GET['pic_id'];
-        $res = run_q("SELECT `likes` FROM `pictures` WHERE pic_id=".$pic_id);
-        $likesNum = mysql_result($res, 0, 0);
-        if (is_null($likesNum)) {
-            $likesNum = 0;
-        }
-        if (isset($_POST['likeButton'])) {
-            $likesNum++;
-            $update = "UPDATE `pictures` SET `likes`=" . $likesNum . " WHERE pic_id=".$pic_id;
-            $rs = run_q($update);
-        }
-        
         $select = '';
+
         if(isset($_GET['browsePublic'])){
-            $select = 'SELECT pic_id FROM pictures WHERE
+            $select = 'SELECT pic_id, likes FROM pictures WHERE
             catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') AND is_public=1 ORDER BY pic_id';
+            $res = run_q("SELECT `likes` FROM `pictures` WHERE pic_id=".$pic_id);
+            $likesNum = mysql_result($res, 0, 0);
         } else {
             $select = 'SELECT pic_id FROM pictures WHERE
             catalogue_id=(SELECT catalogue_id FROM pictures WHERE pic_id='.$pic_id.') ORDER BY pic_id';

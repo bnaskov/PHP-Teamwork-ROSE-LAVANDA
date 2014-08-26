@@ -10,14 +10,8 @@
             <?php endif; ?>
             <div>
                 <?php $_SESSION['pic_id'] = $pic_id; ?>
-
-            <!--This way of receive pic_id - needed for incrementing likes, prevent -->
-            <!--the user from changing the pic_id manually with the browser inspector -->
-            <!--TODO incrementLikes.php - makes UPDATE query to increment likes for the picture -->
-            <!--It will be added in the main directory -->
-
-            <form method="post"><input type="submit"  class="button-like" name="likeButton" value="Like""></form>
-            <div><?php echo "$likesNum"; ?></div>
+                <form method="post" action="increment_likes.php"><input type="submit"  class="button-like" name="likeButton" value="Like"></form>
+                <div><?php echo "$likesNum"; ?></div>
                 <img src="get_pic.php?pic_id=<?php echo $pic_id; ?>&full_size=1&getPublic">
             </div> <?php
         } else {
@@ -30,5 +24,4 @@
             <div><img src="get_pic.php?pic_id=<?php echo $pic_id; ?>&full_size=1"></div> <?php
         }
     ?>
-    </script>
     </div>
