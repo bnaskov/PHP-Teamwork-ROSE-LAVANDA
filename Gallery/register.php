@@ -1,11 +1,11 @@
  <?php
 include 'common.php';
-     if(isset($_POST["username"]) && isset($_POST["passReg"]) && isset($_POST["user-mail"])) {
+     if(isset($_POST["username"]) && isset($_POST["pass"]) && isset($_POST["user-mail"])) {
         $username =  mysql_real_escape_string(addslashes(trim($_POST['username'])));
         $email = $_POST['user-mail'];
         $password =  mysql_real_escape_string(md5($_POST['pass']));
-        $query = "INSERT INTO `users` (login, pass, reg_mail) VALUES ('$username', '$password', '$email')";
-        $result = mysql_query($query);
+        $query = "INSERT INTO users (login, pass, email) VALUES ('$username', 'md5($pass)', '$email')";
+        $result = run_q($query);
         if($result){
             $msg = "User Created Successfully.";
         }
