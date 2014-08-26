@@ -9,7 +9,7 @@ if($_SESSION['is_logged'] === true)
     }
     if(isset($_GET['showPublic'])){
         $query = 'SELECT uc.name, uc.user_id, p.pic_id, p.comment FROM user_catalogues as uc, pictures as p
-                 WHERE p.is_public=1 ORDER BY uc.catalogue_id';
+                 WHERE p.is_public=1 AND uc.user_id!='.$_SESSION['user_id'].' ORDER BY uc.catalogue_id';
     }
     $pics = fetch_all(run_q($query));
 
