@@ -23,8 +23,10 @@
     </div>
     <div class="catalogues">
     <?php
-    foreach($folders as $v): ?>
-         <div><a href="browse.php?pic_id=1"><?php echo $v['name']; ?></a></div>
+    foreach($folders as $v):
+         $cataloguePics = fetch_all(run_q('SELECT p.pic_id FROM pictures as p WHERE p.catalogue_id='.$v['catalogue_id']));
+         $firstPic = $cataloguePics[0]['pic_id'];?>
+         <div><a href="browse.php?pic_id=<?php echo $firstPic; ?>&browsePrivate"><?php echo $v['name']; ?></a></div>
     <?php endforeach;
     ?>
     </div>

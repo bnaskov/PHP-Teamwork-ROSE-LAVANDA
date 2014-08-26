@@ -14,6 +14,8 @@
     font-size: 120%;
     font-style: italic; }
   .wrapper .picture {
+    width: 100px;
+    height: 100px;
     display: inline-block;
     margin: 2%; }
     .wrapper .picture div:first-of-type a {
