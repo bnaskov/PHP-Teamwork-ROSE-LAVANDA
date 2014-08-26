@@ -18,10 +18,10 @@
 		</div>
 		<div class="center">
 			<ul>
-		        <li><a href="http://picasa.google.com/"><img src="images/picasa-logo.png" alt=""></a></li>
-		        <li><a href="https://www.flickr.com/"><img src="images/Flickr_logo.png" alt=""></a></li>
-		        <li><a href="http://instagram.com/"><img src="images/Instagram-logo.png" alt=""></a></li>
-		        <li><a href="http://www.500px.com/"><img src="images/500px.png" alt=""></a></li>
+		        <li><a href="http://picasa.google.com/"><img src="images/picasa-logo.png" target="_blank" alt=""></a></li>
+		        <li><a href="https://www.flickr.com/"><img src="images/Flickr_logo.png" target="_blank" alt=""></a></li>
+		        <li><a href="http://instagram.com/"><img src="images/Instagram-logo.png" target="_blank" alt=""></a></li>
+		        <li><a href="http://www.500px.com/"><img src="images/500px.png" target="_blank" alt=""></a></li>
 		    </ul>
 
 	    </div>
@@ -29,7 +29,7 @@
 
    	</div>
     <div>
-        <a href="https://www.facebook.com/pages/%D0%93%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F-Rose-Lavanda/1460284694256938?sk=timeline">
+        <a href="https://www.facebook.com/pages/%D0%93%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F-Rose-Lavanda/1460284694256938?sk=timeline" target="_blank">
             <img src="images/logo.png" />
         </a>
     </div>
