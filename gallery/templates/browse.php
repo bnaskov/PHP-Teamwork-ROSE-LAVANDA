@@ -16,7 +16,8 @@
             <!--TODO incrementLikes.php - makes UPDATE query to increment likes for the picture -->
             <!--It will be added in the main directory -->
 
-                <button type="submit" class="button-like" onclick="window.location.href='incrementLikes.php'">Like</button>
+            <form method="post"><input type="submit"  class="button-like" name="likeButton" value="Like""></form>
+            <div><?php echo "$likesNum"; ?></div>
                 <img src="get_pic.php?pic_id=<?php echo $pic_id; ?>&full_size=1&getPublic">
             </div> <?php
         } else {
@@ -29,4 +30,5 @@
             <div><img src="get_pic.php?pic_id=<?php echo $pic_id; ?>&full_size=1"></div> <?php
         }
     ?>
+    </script>
     </div>

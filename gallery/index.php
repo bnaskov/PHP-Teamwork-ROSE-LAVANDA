@@ -38,15 +38,25 @@
             // NOTICE: The name of the array should be topPictures
 //            include 'getMostPopularPics.php';
 //            $id = 1;
-//            foreach($topPictures as $pic): ?>
-<!--                <div class="picture">-->
-<!--                    <div>-->
-<!--                        <a id="--><?php //echo $id?><!--" href="browse.php?pic_id=--><?php //echo $pic['pic_id']; ?><!--"><img src="get_pic.php?pic_id=--><?php //echo $v['pic_id']; ?><!--&full_size=0"></a>-->
-<!--                    </div>-->
-<!--                    <div id="comment--><?php //echo $id; $id++; ?><!--" class="comment">--><?php //echo $pic['comment'] ?><!--</div>-->
-<!--                </div>-->
-<!--            --><?php //endforeach;
-//            ?>
+            //$res = mysql_query ("SELECT pic_id FROM `pictures` WHERE is_public=1");
+            //$row = mysql_fetch_row($res);
+            //if ($row)
+            //    $topPictures[] = $row['pic_id'];
+            $con=mysqli_connect("localhost","root","","gallery");
+            $result = mysqli_query($con,"SELECT pic_name FROM `pictures` WHERE is_public=1");
+
+            while($row = mysqli_fetch_array($result)) {
+              $topPictures[] = $row['pic_name'];
+            }
+            /* foreach($topPictures as $pic): ?>
+              <div class="picture">
+                    <div>
+                        <a id="<?php echo $id?>" href="browse.php?pic_id=<?php echo $pic['pic_id']; ?>"><img src="get_pic.php?pic_id=<?php echo $v['pic_id']; ?>&full_size=0"></a>
+                    </div>
+                    <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo $pic['comment'] ?></div>
+                </div>
+            <?php endforeach; */
+           ?>
         </section>
         <section class="authentication">
             <form action="login.php" method="post" class="form">
@@ -66,7 +76,7 @@
                 <?php if(isset($_SESSION['msg'])): ?>
                     <div><p><?php echo $_SESSION['msg']; session_destroy(); ?></p></div>
                 <?php endif; ?>
-                <input type="submit" value="Register" name="regform"/>
+                <input type="submit" value="Register"/>
             </form>
         </section>
 
