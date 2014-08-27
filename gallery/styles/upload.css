@@ -48,10 +48,13 @@
       display: block;
       margin: 3% auto; }
     .wrapper .form select {
+      width: 50%;
       font-size: 100%;
-      color: #323232;
-      word-wrap: break-word;
-      text-overflow: ellipsis; }
+      color: #323232; }
+      .wrapper .form select option {
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
     .wrapper .form textarea {
       padding: 2%; }
     .wrapper .form textarea:active, .wrapper .form textarea:focus, .wrapper .form select:active, .wrapper .form select:focus {

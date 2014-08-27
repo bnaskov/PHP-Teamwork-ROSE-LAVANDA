@@ -23,7 +23,7 @@
                 <label for="file">Select file</label>
                 <input type="file" id="file" name="user_pic" value="Select">
                 <label for="catalogues">Catalogue: </label>
-                <select id="catalogues" name="folder">
+                <select id="catalogues" name="folder" class="chosen-select">
                     <?php
                     foreach($folders as $v): ?>
                         <option value=<?php echo $v['catalogue_id'] ?>><?php echo $v['name']; ?></option>
@@ -38,3 +38,12 @@
             </div>
         </form>
     </div>
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        var maxLength = 15;
+        $('#catalogues > option').text(function(i, text) {
+            if (text.length > maxLength) {
+                return text.substr(0, maxLength) + '...';
+            }
+        });
+    </script>

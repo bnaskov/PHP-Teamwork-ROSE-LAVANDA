@@ -55,10 +55,14 @@
       margin: 3% auto;
     }
     select{
+      width: 50%;
       font-size: 100%;
       color: rgb(50, 50, 50);
-      word-wrap: break-word;
-      text-overflow: ellipsis;
+      option{
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
     textarea{
       padding: 2%;
