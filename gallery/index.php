@@ -33,7 +33,7 @@
         <section class="popular_pics">
             <div class="header"><p>Our most liked pictures</p></div>
             <?php
-            $con=mysqli_connect("localhost","root","","gallery");
+            $con=mysqli_connect("localhost:8080","root","","gallery");
             $result = mysqli_query($con,"SELECT pic_id FROM pictures WHERE is_public=1 ORDER BY likes DESC");
             $publicPictures = array();
             while($row = mysqli_fetch_array($result)){

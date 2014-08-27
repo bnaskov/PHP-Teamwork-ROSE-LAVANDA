@@ -6,7 +6,7 @@
             if(isset($error)){
                 if(count($error)>0){
                     foreach($error as $v): ?>
-                        <div class="error-message"> <?php echo $v; ?></div>
+                        <div class="error-message"> <?php echo htmlentities($v); ?></div>
                     <?php endforeach;
                 }
             }
@@ -26,9 +26,9 @@
          $cataloguePics = fetch_all(run_q('SELECT p.pic_id FROM pictures as p WHERE p.catalogue_id='.$v['catalogue_id']));
          if(isset($cataloguePics[0]['pic_id'])){
             $firstPic = $cataloguePics[0]['pic_id'];?>
-            <div><a href="browse.php?pic_id=<?php echo $firstPic; ?>&browsePrivate"><?php echo $v['name']; ?></a></div>
+            <div><a href="browse.php?pic_id=<?php echo $firstPic; ?>&browsePrivate"><?php echo htmlentities($v['name']); ?></a></div>
          <?php } else{ ?>
-            <div><a href="#""><?php echo $v['name']; ?></a></div>
+            <div><a href="#""><?php echo htmlentities($v['name']); ?></a></div>
          <?php }
     endforeach;
     ?>

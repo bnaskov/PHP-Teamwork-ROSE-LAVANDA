@@ -5,7 +5,7 @@ try{
     $msg = '';
     if(isset($_POST["username"]) && isset($_POST["pass"]) && isset($_POST["user-mail"])) {
         $username =  mysql_real_escape_string(addslashes(trim($_POST['username'])));
-        $email = ($_POST["user-mail"]);
+        $email = mysql_real_escape_string($_POST["user-mail"]);
         $password =  mysql_real_escape_string(md5($_POST['pass']));
         $date_reg = time();
 

@@ -6,14 +6,14 @@
         if(isset($_GET['showPrivate'])){
             foreach($pics as $v){
                 if($cat != $v['name']): ?>
-                    <div class="catalogue"><h2><?php echo $v['name']; ?></h2></div>
+                    <div class="catalogue"><h2><?php echo htmlentities($v['name']); ?></h2></div>
                 <?php endif;
                 $cat = $v['name']; ?>
                 <div class="picture">
                     <div>
-                        <a id="<?php echo $id; ?>" href="browse.php?pic_id=<?php echo $v['pic_id']; ?>"><img src="get_pic.php?pic_id=<?php echo $v['pic_id']; ?>&full_size=0"></a>
+                        <a id="<?php echo $id; ?>" href="browse.php?pic_id=<?php echo htmlentities($v['pic_id']); ?>"><img src="get_pic.php?pic_id=<?php echo $v['pic_id']; ?>&full_size=0"></a>
                     </div>
-                    <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo $v['comment'] ?></div>
+                    <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo htmlentities($v['comment']) ?></div>
                 </div>
             <?php }
         }
@@ -24,7 +24,7 @@
                 if(empty($v)){
                     continue;
                 }?>
-                <div class="catalogue"><h2><?php echo $k;
+                <div class="catalogue"><h2><?php echo htmlentities($k);
                      $currentCataloguePics = $v; ?></h2></div>
                 <?php
                 foreach($currentCataloguePics as $pic){ ?>
@@ -32,7 +32,7 @@
                     <div>
                         <a id="<?php echo $id; ?>" href="browse.php?pic_id=<?php echo $pic['pic_id']; ?>&browsePublic"><img src="get_pic.php?pic_id=<?php echo $pic['pic_id']; ?>&full_size=0&getPublic"></a>
                     </div>
-                    <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo $pic['comment'] ?></div>
+                    <div id="comment<?php echo $id; $id++; ?>" class="comment"><?php echo htmlentities($pic['comment']) ?></div>
                 </div>
                 <?php }
             }

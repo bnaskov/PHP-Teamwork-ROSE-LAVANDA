@@ -13,7 +13,7 @@
                 if(count($err) > 0)
                 {
                     foreach($err as $v): ?>
-                        <div class="error"><?php echo $v ?></div>
+                        <div class="error"><?php echo htmlentities($v) ?></div>
                     <?php endforeach;
                 }
             }
@@ -26,7 +26,7 @@
                 <select id="catalogues" name="folder" class="chosen-select">
                     <?php
                     foreach($folders as $v): ?>
-                        <option value=<?php echo $v['catalogue_id'] ?>><?php echo $v['name']; ?></option>
+                        <option value=<?php echo $v['catalogue_id'] ?>><?php echo htmlentities($v['name']); ?></option>
                     <?php endforeach;
                     ?>
                 </select>

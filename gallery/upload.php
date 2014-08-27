@@ -39,7 +39,7 @@ if($_SESSION['is_logged']===true){
                         $public = 0;
                     }
                     run_q('INSERT INTO pictures (pic_name, catalogue_id, comment, date_added, is_public) VALUES
-                    ("'.$name.'",'.(int)$_POST['folder'].',"'.addslashes($_POST['user_desc']).'",'
+                    ("'.$name.'",'.(int)$_POST['folder'].',"'.mysql_real_escape_string(addslashes($_POST['user_desc'])).'",'
                     .time().','.$public.')');
                     create_thumb('user_pics'.DIRECTORY_SEPARATOR.$_SESSION['user_id'].DIRECTORY_SEPARATOR.$name);
                     $success = true;

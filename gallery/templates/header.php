@@ -12,7 +12,7 @@
 <body>
 
 <header>
-    <div> Hello, <?php echo $_SESSION['login']; ?> </div>
+    <div> Hello, <?php echo htmlentities($_SESSION['login']); ?> </div>
     <nav>
         <ul>
             <li><a href="index_logged.php?showPublic=1">View Public</a></li>
